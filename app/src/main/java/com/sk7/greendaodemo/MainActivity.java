@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public void queryData(View view) {
         List<User> list = userDao.queryBuilder().where(UserDao.Properties.Id.between(2, 50)).limit(5).build().list();
         for (User user : list) {
-            Log.d("gggggggggggggg", "user = " + user);
+            Log.d("queryData", "user = " + user);
         }
     }
 }
